@@ -1,0 +1,61 @@
+html,body{
+  font-size: 62.5%; /* 1rem -> 10px になるらしい */
+  overflow: hidden; /*スクロール禁止する  */
+  text-align: center;
+  height: 100%;
+}
+
+/* ----------- タイトル関係 ------------*/
+.title{
+  position: relative;
+  height: 35%;
+}
+.title > p {
+  white-space: nowrap; /* 改行しない */
+
+  /* タイトル文字の下寄せ */
+  position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+  
+  font-size: 4.0rem;
+}
+.title > p > a {
+  font-size: 5.4rem;
+}
+
+/* ------------ あんまんか肉まんかの表示(ランダム) ------------ */
+#random {
+  margin-bottom: 40px;
+  font-size: 3.2rem;
+}
+/* 画像のサイズ */
+#random_img > img{
+  width: 20%;
+  min-width: 300px;
+  height: 20%;
+  min-height: 240px;
+}
+
+
+/* -------------- ボタン --------------- */
+#btn{
+  background-color: rgb(248, 165, 39);
+  color: white;
+  
+  font-size: 2.8rem;
+  font-weight: bold;
+  
+  padding: 12px 20px;
+  
+  border-radius: 20px;
+  box-shadow: 0px  10px 4px 0px hsl(0, 1%, 70%);
+
+}
+/* ボタンを押したとき */
+#btn:active {
+  box-shadow: 0px  2px 2px 0px #646464;
+  position: relative;
+  top: 4px;
+}
